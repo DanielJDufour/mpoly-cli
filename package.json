@@ -1,21 +1,21 @@
 {
   "name": "mpoly-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CLI for mpoly",
   "main": "./index.js",
   "bin": {
-      "mpoly-cli": "./bin/mpoly-cli.js"
+    "mpoly-cli": "./bin/mpoly-cli.js"
   },
   "files": [
-      "./index.js",
-      "./bin/mpoly-cli.js"
+    "./index.js",
+    "./bin/mpoly-cli.js"
   ],
   "scripts": {
-      "build": "mkdir -p bin && echo \"#!/usr/bin/env node\n\" > ./bin/mpoly-cli.js && cat index.js >> ./bin/mpoly-cli.js",
-      "f": "npm run format",
-      "format": "npx prettier --arrow-parens=avoid --print-width=120 --trailing-comma=none --write *.js",
-      "setup": "cd test-data && sh setup.sh",
-      "test": "./test.sh"
+    "build": "mkdir -p bin && echo \"#!/usr/bin/env node\n\" > ./bin/mpoly-cli.js && cat index.js >> ./bin/mpoly-cli.js",
+    "f": "npm run format",
+    "format": "npx prettier --arrow-parens=avoid --print-width=120 --trailing-comma=none --write *.js",
+    "setup": "cd test-data && sh setup.sh",
+    "test": "./test.sh"
   },
   "keywords": [
     "geojson",
@@ -24,6 +24,6 @@
   "author": "Daniel J. Dufour",
   "license": "CC0-1.0",
   "dependencies": {
-      "mpoly": "^0.2.0"
+    "mpoly": "^0.2.0"
   }
 }
